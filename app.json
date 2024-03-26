@@ -1,0 +1,72 @@
+{
+    "name": "بـوت اختراق جلسـات 🖤.",
+    "description": "- اختراق جلسـات تيـتو.",
+    "logo": "https://graph.org/file/84a24314f3f561d60a608.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "- الايبي ايدي 🖤.",
+        "value": "22861564",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "- ايبي هـاش 🖤.",
+        "value": "d21d3241e065ab83a101b10fd750201b",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "- توكـن بوتك 🖤.",
+        "value": "",
+        "required": true
+      },
+      "MONGO_URL": {
+        "description": "- المونجـو 🖤.",
+        "value": "",
+        "required": true
+      },
+      "SUDOERS": {
+        "description": "- ايدي المـطور 🖤.",
+        "value": "6816180621",
+        "required": true
+      },
+      "MUST_JOIN": {
+        "description": "قنـاه اشتـراك اجبـاري",
+        "value": "Source_Katya",
+        "required": false
+      },
+      "DISABLED": {
+        "description": "سيبها فاضيه)",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "- ايدي الجـروب يبـدا -100 🖤.",
+        "value": "",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "basic"
+          }
+      },
+      "stack": "container"
+  }
